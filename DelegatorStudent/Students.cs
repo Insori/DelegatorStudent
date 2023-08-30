@@ -18,10 +18,11 @@ namespace DelegatorStudent
 
         public void Print(PrintProcess process)
         {
-            foreach (Student s in listOfStudent)
-            {
-                process(s);
-            }
+            listOfStudent.ForEach((s) => process(s));
+            //foreach (Student s in listOfStudent)
+            //{
+            //    process(s);
+            //}
         }
 
         public void Print()
